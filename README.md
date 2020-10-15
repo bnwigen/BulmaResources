@@ -3,8 +3,4 @@
 This is my list of resources to get a project going. Templates have matching css files.
 
 Templates
-1. Hero-1
-
-
-Style Sheets
-1. Hero-1
+1. Hero-1 - A simple template with tab navigation
