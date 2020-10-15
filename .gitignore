@@ -8,3 +8,7 @@ config.codekit3
 
 node_modules
 README.html
+
+/node_modules
+package.json
+package-lock.json
