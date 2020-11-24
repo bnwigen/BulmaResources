@@ -1,0 +1,155 @@
+@charset "utf-8";
+@import url("https://use.typekit.net/qbh3cwf.css");
+
+// Fonts
+$family-sans-serif: "open-sans", sans-serif;
+
+// Brand colors
+$warm-brown: hsl(338.82,10.18%,32.75%);
+$robin-blue: hsl(165.6, 27.78%, 64.71%);
+$cream: hsl(51.76, 66.23%, 84.9%);
+$orangie: hsl(34.34, 85.8%, 66.86%);
+$redish: hsl(0, 82.76%, 65.88%);
+$warm-gray: hsl(340, 9.89%, 82.16%);
+$light-gray: hsl(334.29, 10.14%, 86.47%);
+$off-white: hsl(340, 13.04%, 95.49%);
+
+// Update Bulma's global variables
+$primary: $robin-blue;
+$link: $redish;
+
+// Update some of Bulma's component variables
+$body-background-color: $off-white;
+
+@import "../node_modules/bulma/bulma.sass";
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+.navbar {
+  background-color: $off-white;
+  height: 85px;
+  box-shadow: 0 0 10px 5px rgba(92,75,81,0.2);
+}
+.hero {
+  height: 500px;
+  background-color: $off-white;
+  background-image: url(../images/christopher-burns-fade.png);
+  background-size: cover;
+}
+.promo-ribbon {
+  text-align: center;
+  padding: 1.5em 0;
+  button {
+    margin-left: 1.5em;
+  }
+}
+.custom-shape-divider-top-1605826490 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1605826490 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+.custom-shape-divider-top-1605826490 .shape-fill {
+  fill: $off-white;
+}
+.main-section {
+  background-color: $light-gray;
+  padding: 4em 0;
+  height: auto;
+}
+.main-section-content {
+  margin: 6em 0;
+  padding: 0 1.5em;
+  .far, .fal {
+    font-size: 5rem;
+    color: $warm-brown;
+  }
+  h2 {
+    font-size: 2rem;
+    padding-top: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  p {
+    padding-right: .75rem;
+  }
+}
+.custom-shape-divider-bottom-1605913974 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1605913974 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 74px;
+}
+.custom-shape-divider-bottom-1605913974 .shape-fill {
+    fill: $off-white;
+}
+.main-color {
+  margin-top: 5%;
+  .column {
+    padding: 0 1.5em;
+    .far, .fal {
+      font-size: 5rem;
+      color: $warm-brown;
+    }
+  }
+}
+.services {
+  margin: 4em 0;
+  .column {
+    padding: 0 1.5em;
+    .far, .fal {
+      font-size: 3rem;
+      color: $warm-brown;
+    }
+    h2 {
+      font-size: 2rem;
+      padding-top: 1em;
+      font-weight: 300;
+    }
+  }
+}
+.contact {
+  margin: 8em 0;
+  h2 {
+    padding-bottom: .75em;
+  }
+}
+footer {
+  background-color: $warm-brown;
+  color: $off-white;
+  margin-top: 5em;
+  padding: 2em;
+}
+.legal {
+  font-size: .7em;
+  color: $off-white;
+  margin-top: 1em;
+}
