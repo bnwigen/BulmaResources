@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url("https://use.typekit.net/qbh3cwf.css");
+
+// Fonts
+$family-sans-serif: "open-sans", sans-serif;
+
+// Brand colors
+$dusty-blue: #4C6472;
+$blue: #57A4B1;
+$celery: #B0D894;
+$yellow: #FADE89;
+$red: #F95355;
+$off-white: #fff4f4;
+$white: #ffffff;
+$coal: #363636;
+
+// Update Bulma's global variables
+$primary: $dusty-blue;
+$link: $red;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+
+@import "../node_modules/bulma/bulma.sass";
+
+.hero-caption-box {
+  width: 43%;
+  .title {
+    text-transform: uppercase;
+    background: rgba(0,0,0,.5);
+    display: inline-block;
+    margin: 0 0 23px 0;
+    padding: 10px 15px;
+  }
+  .subtitle {
+    background-color: rgba(0,0,0,.5);
+    padding: 10px 15px;
+    line-height: 1.45em;
+    margin: 0;
+  }
+  a {
+    margin-top: 25px;
+  }
+  .button {
+    margin-left: 2px;
+  }
+}
+
+.intro {
+  .intro-head {
+    margin: 35px 0;
+    font-weight: 300;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+  .intro-title {
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 1.2;
+    .bold {
+      font-weight: 800;
+    }
+  }
+  .intro-subtitle {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+  }
+  .intro-text {
+    padding-top: 18px;
+    .intro-highlight {
+      color: $red;
+      font-weight: bold;
+    }
+  }
+}
