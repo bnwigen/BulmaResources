@@ -5,14 +5,16 @@
 $family-sans-serif: "open-sans", sans-serif;
 
 // Brand colors
-$dusty-blue: #4C6472;
-$blue: #57A4B1;
-$celery: #B0D894;
-$yellow: #FADE89;
-$red: #F95355;
+$dusty-blue: #4c6472;
+$dark-blue: #2f3d46;
+$blue: #57a4b1;
+$celery: #b0d894;
+$yellow: #fade89;
+$red: #f95355;
 $off-white: #fff4f4;
 $white: #ffffff;
 $coal: #363636;
+$gray-light: #999999;
 
 // Update Bulma's global variables
 $primary: $dusty-blue;
@@ -23,17 +25,27 @@ $body-background-color: $white;
 
 @import "../node_modules/bulma/bulma.sass";
 
+h4 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1em 0;
+  text-align: center;
+  .bold {
+    font-weight: 800;
+  }
+}
+
 .hero-caption-box {
   width: 43%;
   .title {
     text-transform: uppercase;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.5);
     display: inline-block;
     margin: 0 0 23px 0;
     padding: 10px 15px;
   }
   .subtitle {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
     line-height: 1.45em;
     margin: 0;
@@ -73,4 +85,105 @@ $body-background-color: $white;
       font-weight: bold;
     }
   }
+  .intro-text:last-child {
+    margin-bottom: 3em;
+  }
+}
+
+.section-header {
+  height: 200px;
+  background-color: $coal;
+  h3 {
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $white;
+    padding-top: 0.55em;
+  }
+}
+
+.menu-container {
+  padding-top: 0.5em;
+  margin-bottom: 3em;
+  .menu-list {
+    padding: 0 1em;
+    li {
+      border-top: 1px dashed $gray-light;
+    }
+    li:last-child {
+      border-bottom: 1px dashed $gray-light;
+    }
+    .menu-item-img {
+      float: left;
+      margin-right: 2em;
+    }
+    .menu-item {
+      color: $coal;
+      display: block;
+      padding: 1em 0.5em;
+    }
+    .menu-item-inner {
+      position: relative;
+      overflow: hidden;
+      .title-container {
+        font-size: 1.3em;
+        line-height: 1.4em;
+      }
+      .item-title {
+        padding-right: 60px;
+        text-transform: uppercase;
+        color: $dusty-blue;
+        font-weight: 600;
+      }
+      .item-price {
+        font-weight: 400;
+        color: $dusty-blue;
+        font-style: italic;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .item-desc {
+        font-size: 0.85em;
+      }
+    }
+  }
+}
+
+.contact-container {
+  background-color: $dark-blue;
+  padding: 2em 0;
+  .fas {
+    color: $white;
+    margin-right: 0.5em;
+    font-size: 0.85em;
+  }
+  h3 {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .details-container p {
+    font-size: 0.85em;
+    color: $gray-light;
+  }
+  .email {
+    color: $white;
+  }
+}
+
+.location-head,
+.form-head {
+  color: $white;
+  text-align: left;
+  font-size: 1.35em;
+  line-height: 1;
+  text-transform: none;
+  margin-top: 1em;
+}
+
+.footer {
+  background-color: $coal;
+  color: $white;
 }
