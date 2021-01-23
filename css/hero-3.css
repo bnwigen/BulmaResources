@@ -10163,6 +10163,9 @@ h4 .bold {
   margin-left: 2px;
 }
 
+.intro {
+  margin-bottom: 3em;
+}
 .intro .intro-head {
   margin: 35px 0;
   font-weight: 300;
@@ -10204,6 +10207,10 @@ h4 .bold {
   font-weight: 300;
   color: #ffffff;
   padding-top: 0.55em;
+}
+
+.courses {
+  margin-bottom: 3em;
 }
 
 .menu-container {
@@ -10256,7 +10263,7 @@ h4 .bold {
 
 .contact-container {
   background-color: #2f3d46;
-  padding: 2em 0;
+  padding: 3em 0;
 }
 .contact-container .fas {
   color: #ffffff;
@@ -10289,4 +10296,47 @@ h4 .bold {
 .footer {
   background-color: #363636;
   color: #ffffff;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.footer h4 {
+  font-size: 1.5em;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0.25em;
+}
+.footer .social {
+  font-size: 1.25em;
+  line-height: 1.15;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+.footer .social .social-badges {
+  margin-top: 0.35em;
+}
+.footer .social .social-badges .fab {
+  font-size: 2em;
+  padding-right: 3px;
+}
+.footer li {
+  padding-bottom: 0.5em;
+}
+.footer li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer .colophon {
+  margin-top: 2em;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.footer .colophon a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer .colophon p {
+  font-size: 0.75em;
+  padding-top: 0.3em;
 }

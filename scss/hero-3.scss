@@ -59,6 +59,7 @@ h4 {
 }
 
 .intro {
+  margin-bottom: 3em;
   .intro-head {
     margin: 35px 0;
     font-weight: 300;
@@ -101,6 +102,10 @@ h4 {
     color: $white;
     padding-top: 0.55em;
   }
+}
+
+.courses {
+  margin-bottom: 3em;
 }
 
 .menu-container {
@@ -153,7 +158,7 @@ h4 {
 
 .contact-container {
   background-color: $dark-blue;
-  padding: 2em 0;
+  padding: 3em 0;
   .fas {
     color: $white;
     margin-right: 0.5em;
@@ -186,4 +191,47 @@ h4 {
 .footer {
   background-color: $coal;
   color: $white;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  h4 {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0.25em;
+  }
+  .social {
+    font-size: 1.25em;
+    line-height: 1.15;
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    .social-badges {
+      margin-top: 0.35em;
+      .fab {
+        font-size: 2em;
+        padding-right: 3px;
+      }
+    }
+  }
+  li {
+    padding-bottom: 0.5em;
+  }
+  li a {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .colophon {
+    margin-top: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+    a {
+      color: $white;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 0.75em;
+      padding-top: 0.3em;
+    }
+  }
 }
