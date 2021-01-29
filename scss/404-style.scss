@@ -3,3 +3,37 @@
 
 // Fonts
 $family-sans-serif: "open-sans", sans-serif;
+
+// Brand colors
+$blue-100: #5793ff;
+$green-100: #8be836;
+$yellow-101: #ffc142;
+$red-101: #e83938;
+$purple-101: #c100ff;
+$white: #ffffff;
+$black: #111;
+$coal: #363636;
+
+// Update Bulma's global variables
+$primary: $blue-100;
+$link: $red-101;
+
+// Update some of Bulma's component variables
+$body-background-color: $black;
+
+@import "../node_modules/bulma/bulma.sass";
+
+.main-box {
+  margin: 2em 0;
+  h2 {
+    font-family: $family-sans-serif;
+    color: $white;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  p {
+    color: $white;
+    font-size: 1.15em;
+    line-height: 1.5;
+  }
+}
